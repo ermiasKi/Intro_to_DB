@@ -10,7 +10,7 @@ try:
 
     cursor = mydb.cursor()
 
-    cursor.execute('CREATE DATABASE alx_book_store;')
+    cursor.execute('CREATE DATABASE IF NOT EXISTS alx_book_store;')
 
     cursor.commit()
     cursor.close()
