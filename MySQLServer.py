@@ -18,5 +18,5 @@ try:
     mydb.close()
 
     print("Database 'alx_book_store' created successfully!")
-except Error as e:
+except mysql.connector.Error:
     print("Database 'alx_book_store' has already createds!")
