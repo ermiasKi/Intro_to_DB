@@ -1,4 +1,5 @@
 import mysql.connector
+from mysql.connector import Error
 
 
 try:
@@ -17,5 +18,5 @@ try:
     mydb.close()
 
     print("Database 'alx_book_store' created successfully!")
-except:
+except Error as e:
     print("Database 'alx_book_store' has already createds!")
